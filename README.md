@@ -16,6 +16,8 @@ The network is setup as:
 instead, the traffic in those nodes goes through `eth1` and is routed by the
 `router` machine.
 
+**NB** For a ansible managed environment see [rgl/windows-router-ansible-vagrant](https://github.com/rgl/windows-router-ansible-vagrant).
+
 **NB** For a debian linux equivalent of this environment see
 [rgl/debian-router-vagrant](https://github.com/rgl/debian-router-vagrant).
 
