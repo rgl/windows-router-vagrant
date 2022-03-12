@@ -8,8 +8,8 @@ Install-ChocolateyShortcut `
 # leave npcap on the desktop for the user to install manually.
 # (it does not have a silent installer).
 # see https://github.com/nmap/npcap/releases
-$url = 'https://nmap.org/npcap/dist/npcap-1.20.exe'
-$expectedHash = 'ef8113e595694a14d35bd31043ed6ea73ac5793cf53985ae950f4e65b406e363'
+$url = 'https://npcap.com/dist/npcap-1.60.exe'
+$expectedHash = '87d3624772b8272767a3a4ffcceecc3052489cd09e494a6c352dce5e5efa4070'
 $localPath = "$env:USERPROFILE\Desktop\$(Split-Path -Leaf $url)"
 (New-Object Net.WebClient).DownloadFile($url, $localPath)
 $actualHash = (Get-FileHash $localPath -Algorithm SHA256).Hash
