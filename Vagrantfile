@@ -48,7 +48,7 @@ end
 
 def provision_common(config)
   config.vm.provision "shell", path: "provision/ps.ps1", args: "locale.ps1"
-  config.vm.provision "shell", inline: "$env:chocolateyVersion='0.10.15'; iwr https://chocolatey.org/install.ps1 -UseBasicParsing | iex", name: "Install Chocolatey"
+  config.vm.provision "shell", inline: "$env:chocolateyVersion='0.12.1'; Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))", name: "Install Chocolatey"
   config.vm.provision "shell", path: "provision/ps.ps1", args: "provision-google-chrome.ps1"
   config.vm.provision "shell", path: "provision/ps.ps1", args: "provision-wireshark.ps1"
 end
