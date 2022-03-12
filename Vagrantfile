@@ -9,7 +9,7 @@ $node_ip_addresses = [
 ]
 
 Vagrant.configure(2) do |config|
-  config.vm.box = 'windows-2019-amd64'
+  config.vm.box = 'windows-2022-amd64'
 
   config.vm.provider 'libvirt' do |lv, config|
     lv.memory = 2*1024

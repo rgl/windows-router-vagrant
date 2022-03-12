@@ -23,7 +23,7 @@ instead, the traffic in those nodes goes through `eth1` and is routed by the
 
 ## Usage
 
-Install the [base windows 2019 box](https://github.com/rgl/windows-vagrant).
+Install the [base windows 2022 box](https://github.com/rgl/windows-vagrant).
 
 Start this environment:
 
